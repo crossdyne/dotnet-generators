@@ -1,11 +1,10 @@
 # ==========================================
 # 1. Basic settings and line breaks
 # ==========================================
-
 * text=auto
 
 # ==========================================
-# 2. File types .NET / C#
+# 2. .NET, C# and PowerShell file types
 # ==========================================
 *.cs text diff=csharp
 *.csproj text
@@ -22,6 +21,11 @@
 *.txt text
 *.yml text
 *.yaml text
+
+*.ps1 text
+*.psm1 text
+*.psd1 text
+
 *.gitignore text
 *.gitattributes text
 
