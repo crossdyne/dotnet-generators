@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <Description>High-performance .NET Generators for compile-time creation of realistic mock and test data. Instantly generate diverse names, addresses, emails, and dummy values with zero runtime overhead, perfect for unit testing, prototyping, and seeding databases.</Description>
+    <PackageTags>dotnet; mock-data; test-data; faker; dummy-data; names; addresses; unit-testing; database-seeding; prototyping; crossdyne</PackageTags>
+  </PropertyGroup>
+
+</Project>
