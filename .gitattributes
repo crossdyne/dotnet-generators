@@ -1,0 +1,39 @@
+# ==========================================
+# 1. Basic settings and line breaks
+# ==========================================
+
+* text=auto
+
+# ==========================================
+# 2. File types .NET / C#
+# ==========================================
+*.cs text diff=csharp
+*.csproj text
+*.sln text
+*.fsproj text
+*.vbproj text
+*.resx text
+*.xml text
+*.json text
+*.config text
+*.props text
+*.targets text
+*.md text
+*.txt text
+*.yml text
+*.yaml text
+*.gitignore text
+*.gitattributes text
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.dll binary
+*.exe binary
+*.pdb binary
+*.nupkg binary
+*.snupkg binary
+*.zip binary
+*.tar.gz binary
