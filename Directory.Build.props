@@ -1,0 +1,47 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework Condition="'$(TargetFramework)' == ''">net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Authors>Igor Boytsov</Authors>
+    <Company>Crossdyne</Company>
+    <Copyright>Copyright © $([System.DateTime]::UtcNow.Year) Crossdyne</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    
+    <Description>High-performance .NET Generators for compile-time creation of realistic mock data, secure keys, passwords, names, and diverse test values.</Description>
+    <PackageTags>dotnet; roslyn; mock-data; test-data; faker; password-generator; cryptography; names; crossdyne; development-tools</PackageTags>
+    
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/crossdyne/dotnet-generators</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/crossdyne/dotnet-generators</PackageProjectUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <IncludeSource>false</IncludeSource>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources> 
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)README.md" 
+          Pack="true" 
+          PackagePath="\" 
+          Condition="Exists('$(MSBuildThisFileDirectory)README.md')" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(RepositoryType)' == 'git'">
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.400" PrivateAssets="All" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="$(TargetFramework.EndsWith('-windows'))">
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+</Project>
