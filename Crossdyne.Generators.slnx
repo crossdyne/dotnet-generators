@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Crossdyne.Cryptorium/Crossdyne.Cryptorium.csproj" />
+    <Project Path="src/Crossdyne.Randomium/Crossdyne.Randomium.csproj" />
+  </Folder>
+</Solution>
