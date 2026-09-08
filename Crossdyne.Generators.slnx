@@ -3,4 +3,8 @@
     <Project Path="src/Crossdyne.Cryptorium/Crossdyne.Cryptorium.csproj" />
     <Project Path="src/Crossdyne.Randomium/Crossdyne.Randomium.csproj" />
   </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/unit/">
+    <Project Path="tests/unit/Crossdyne.Cryptorium.Unit.Tests/Crossdyne.Cryptorium.Unit.Tests.csproj" />
+  </Folder>
 </Solution>
