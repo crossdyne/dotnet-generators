@@ -1,5 +1,6 @@
 using System.Security.Cryptography;
 using Crossdyne.Cryptorium.Abstractions;
+using Crossdyne.Cryptorium.Resources;
 
 namespace Crossdyne.Cryptorium.Password
 {
