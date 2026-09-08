@@ -1,4 +1,4 @@
-namespace Crossdyne.Cryptorium.Password
+namespace Crossdyne.Cryptorium.Resources
 {
     /// <summary>
     /// 
